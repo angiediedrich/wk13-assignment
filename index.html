@@ -20,8 +20,13 @@
 
         <!--Call your modal-->
         <ul>
-            <li><a id="demo01" href="#animatedModal">DEMO01</a></li>
-            <li><a id="demo02" href="#modal-02">DEMO02</a></li>
+            <li><a id="recipe1" href="#animatedModal">Sarah's Applesauce</a></li>
+            <li><a id="recipe2" href="#modal-02">Morning Glory Muffins</a></li>
+            <li><a id="recipe3" href="#modal-03">Turkey Brine</a></li>
+            <li><a id="recipe4" href="#modal-04">White Chili</a></li>
+            <li><a id="recipe5" href="#modal-05">Marinated Pork</a></li>
+            <li><a id="recipe6" href="#modal-06">Fruit Salad</a></li>
+            <li><a id="recipe7" href="#modal-07">Hot and Sour Soup</a></li>
         </ul>
       
       
@@ -254,10 +259,10 @@
             </div>
         </div>
 
-        <!--DEMO06-->
-        <div id="modal-06">
+        <!--DEMO07-->
+        <div id="modal-07">
             <!--"THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID-->
-            <div  id="btn-close-modal" class="close-modal-06"> 
+            <div  id="btn-close-modal" class="close-modal-07"> 
                 CLOSE MODAL
             </div>
             
@@ -301,19 +306,97 @@
             </div>
         </div>
 
-
         <script src="js/jquery.min.js"></script>
         <script src="js/animatedModal.min.js"></script>
         <script>
 
-            //demo 01
-            $("#demo01").animatedModal();
+            //Modal 1
+            $("#recipe1").animatedModal();
 
-            //demo 02
-            $("#demo02").animatedModal({
+            //Modal 2
+            $("#recipe2").animatedModal({
                 modalTarget:'modal-02',
                 animatedIn:'lightSpeedIn',
                 animatedOut:'bounceOutDown',
+                color:'#3498db',
+            });
+
+            //Modal 3
+            $("#recipe3").animatedModal({
+                modalTarget:'modal-03',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'fadeIn',
+                color:'#3498db',
+            });
+
+            //Modal 4
+            $("#recipe4").animatedModal({
+                modalTarget:'modal-04',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'BounceOutDown',
+                color:'#3498db',
+                // Callbacks
+                beforeOpen: function() {
+                    console.log("The animation was called");
+                },           
+                afterOpen: function() {
+                    console.log("The animation is completed");
+                }, 
+                beforeClose: function() {
+                    console.log("The animation was called");
+                }, 
+                afterClose: function() {
+                    console.log("The animation is completed");
+                }
+            });
+
+            //Modal 5
+            $("#recipe5").animatedModal({
+                modalTarget:'modal-05',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'slideOutRight',
+                color:'#3498db',
+                // Callbacks
+                beforeOpen: function() {
+                    console.log("The animation was called");
+                },           
+                afterOpen: function() {
+                    console.log("The animation is completed");
+                }, 
+                beforeClose: function() {
+                    console.log("The animation was called");
+                }, 
+                afterClose: function() {
+                    console.log("The animation is completed");
+                }
+            });
+
+            //Modal 6
+            $("#recipe6").animatedModal({
+                modalTarget:'modal-06',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'fadeOutDown',
+                color:'#3498db',
+                // Callbacks
+                beforeOpen: function() {
+                    console.log("The animation was called");
+                },           
+                afterOpen: function() {
+                    console.log("The animation is completed");
+                }, 
+                beforeClose: function() {
+                    console.log("The animation was called");
+                }, 
+                afterClose: function() {
+                    console.log("The animation is completed");
+                }
+            });
+
+            //Modal 7
+            $("#recipe7").animatedModal({
+                modalTarget:'modal-07',
+                animatedIn:'lightSpeedIn',
+                animatedOut:'slideOutDown',
                 color:'#3498db',
                 // Callbacks
                 beforeOpen: function() {
